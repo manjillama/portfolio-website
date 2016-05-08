@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get To Know Me</title>
+	<meta name="description" content="Final project, Introduction to Internet">
+	 <meta name="author" content="Manjil Tamang">
+	 <!-- CSS file -->
+	 <link rel="stylesheet" href="css/style.css">
+	 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	 <!-- for icon image -->
+    <link rel="icon" href="img/logoMJL.png">
+    <style>
+    .show {
+  		 width: 300px;
+ 		 height: 400px;
+   		float: left;
+  	 	overflow: hidden;
+   		position: relative;
+   		text-align: center;
+	}
+	.show .mask {
+   		width: 300px;
+   		height: 400px;
+   		position: absolute;
+   		overflow: hidden;
+   		top: 0;
+   		left: 0;
+	}
+	
+    .view {
+  		 width: 449px;
+ 		 height: 300px;
+   		float: left;
+  	 	overflow: hidden;
+   		position: relative;
+   		text-align: center;
+	}
+	.view .mask {
+   		width: 449px;
+   		height: 300px;
+   		position: absolute;
+   		overflow: hidden;
+   		top: 0;
+   		left: 0;
+	}
+
+
+/* SECOND EFFECTS */
+
+	.second-effect .mask {
+   		opacity: 0;
+   		overflow:visible;
+   		border:0px solid rgba(0,0,0,0.7);
+   		-moz-box-sizing:border-box;
+   		-webkit-box-sizing:border-box;
+   		box-sizing:border-box;
+   		-webkit-transition: all 0.4s ease-in-out;
+   		-moz-transition: all 0.4s ease-in-out;
+   		-o-transition: all 0.4s ease-in-out;
+   		-ms-transition: all 0.4s ease-in-out;
+   		transition: all 0.4s ease-in-out;
+	}
+
+	.second-effect:hover .mask {
+   		opacity: 1;
+   		border:200px solid rgba(0,0,0,0.7);
+	}
+    </style>
+</head>
+<body style="">
+	<div class="holder">
+		<div class="navigation-holder">
+			<a href="index.html" ><img src="img/logoMJL.png" /></a>
+			<nav>
+			<ul>
+				<a href="contact.html"><li>CONTACT</li></a>
+				<a href="about.html"><li>ABOUT</li></a>
+				<a href="blog.html"><li>BLOG	</li></a>
+				<a href="work.html"><li>INFO</li></a>
+				<a href="index.html"><li>HOME</li></a>
+			<ul>
+			</nav>
+		</div><!--End of navigation-holder -->
+	</div><!-- end of holder -->
+	<div class="container">
+		<section class="global-header">
+			<h2 style="font-size:42px;font-weight:bold;">ABOUT</h2>
+				<p style="font-size:15px;font-weight:300;">
+					Home / About
+				</p>		
+		</section>
+		<section class="about-one" style="background:rgba(255,255,255,0.5);overflow:hidden;">
+			<div class="view second-effect">
+				<img src="img/boudha.jpg" style="float:left;" />
+        			<div class="mask">
+				</div>
+			</div>
+			<div class="about-text-holder">
+				<h2 style="color:#000;margin-top:10px;">PURPOSE</h2>
+				<p style="font-size:14px;line-height:22px;font-weight:300;margin-top:-10px;margin-right:5px;">
+					
+                                	The whole purpose of this website is to give basic real-time information about frontend development and its technologies. Rather than being just development, it is more about user experience which is perhaps the most important factor.<br />
+                                	Good front-end engineers are always in high demand as end users get more stimulated by its visuals rather than by its working mechanism. You can go to any college and get a computer science degree, but most front-end development is self-taught. This makes learning solid front-end development skills and its practices very hard, and keeping up with it much harder.
+                            
+				</p>
+			</div>
+		</section>
+			<section>
+				<div style="background:#252531;width:46%;color:#fff;text-align:justify;padding:10px 20px;overflow:hidden;float:left;">
+					<h2>HOW TO GET BETTER AT IT ?</h2>
+					<p style="font-size:14px;line-height:22px;font-weight:300;">
+						If you are new to the wrold of front-end development, the best place to start is to learn it off through the internet. You will find plenty of tutorials and videos there. Though there are many frameworks and platforms for front-end development I would suggest not to get too attached with any of it. Also, making sure to not just build something for youself or for other developer is the key. Think about your taget audience and start to make your website accordingly. Aslo keeping a keen eye on web trends will surely help you to get your work done faster. Lastly make a GitHub account and start making collaboration with a team, weigh-in on other's project and contribute.
+					</p>
+				</div>
+				<div style="background:#363543;width:45.6%;color:#fff;text-align:justify;padding:10px 20px;overflow:hidden;float:left;">
+					<h2>TIPS FOR IMPROVING TO NEXT LEVEL</h2>
+					<p style="font-size:14px;line-height:22px;font-weight:300;"> 
+						Just being on a front-end web developing track might not be enough. You will have to start brushing up on you skills in a better, perhaps even more effecient ways as well, rather than trying to create single webpages with the aim to use certain features to train yourself. The key is to establish your own projects. It will help you a great deal in putting you skills to practice. Try visiting communities where custom HTML/CSS themes are the norm, such as Blogspot or Zetaboeards and release something of your own. This will not only solidify you knowledge, but also you will get to learn first-hand on how to adapt your skills for other platforms.
+					</p>
+				</div>
+		</section>
+		<section class="about-two" style="background:rgba(255,255,255,0.5)">
+			<h2 style="color:#000;padding:10px;font-size:24px;">MEET THE DEVELOPER</h2>
+			<div class="about-dev" style="margin:0 auto;width:80%;">
+				<div class="show second-effect">
+					<img src="img/mjl.jpg" />
+        				<div class="mask">
+					</div>
+				</div>
+				<div class="dev-content" style="text-align:left;margin-left:350px;">
+					<h2 style="font-size:20px;color:#38bef1;line-height:15px;">MANJIL TAMANG<br/><span style="font-size:13px;">Junior Full Stack, Front End Developer<span></h2>
+					<p style="font-size:14px;line-height:22px;font-weight:300;">
+					Hello there, this is <b>Manjil Tamang</b>. I thank you all those who are taking their time to look at my website and hopefully it somewhat managed to help you in a way or two. Web Development is very fun and career wise also very advantageous. I have been developing website for over a year now and is sort of my what I enjoy doing as well, you can say it's more of a hobby.
+					<br /></br/>
+					I'm currently studying Bsc. honors in Computing at Islington College, Kamalpokhari. I currently live in Jorpati-6 and my hobbies includes hanging out with friends, playing guitar and listening to music. If you want to know me better or get in touch, feel free to contact me. You can do it by going to contact section of this page.
+					</p>
+						
+				</div>
+			</div>
+		</section>
+		</div><!-- End of container -->
+		<footer>
+			<section class="footer-top">
+				<h2 style="font-size:30px;font-weight:300;overflow:hidden;margin-top:60px;margin-bottom:0;">SO WHAT DID YOU THINK ?</h2>
+				<div class="pre-content">
+					<span style="font-size:15px;font-weight:300;">
+						"First you must learn to pull the oar, only then can you take helm"
+					</span>
+					<a href="contact.html" style="text-decoration:none;">
+						<div class="btn-contact" style="">
+							CONTACT ME
+						</div>
+					</a>
+				</div>
+			</section><!-- End of footer-top -->
+			<section class="footer-bottom">
+				<div style="width:960px;margin:0 auto;">
+					Copyright 2016 Design and Developed by <a href="https://www.linkedin.com/profile/view?id=AAMAABoUrDwBHdJ-h3vHSS4K9H5Ax9aAUAvup58&trk=hp-identity-name" target="_blank" style="color:#33bcf0;text-decoration:none;"> MANJIL TAMANG</a>, Islington College.
+					<span style="float:right;color:#33bcf0;"> View <a href="reference.html" style="color:#33bcf0;text-decoration:none"> References</a></span>
+				</div>
+			</section>
+		</footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Me</title>
+	<meta name="description" content="Final project, Introduction to Internet">
+	 <meta name="author" content="Manjil Tamang">
+	 <!-- CSS file -->
+	 <link rel="stylesheet" href="css/style.css">
+	 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	 
+	 <script src="js/script.js"></script>
+	 <!-- for icon image -->
+    <link rel="icon" href="img/logoMJL.png">
+</head>
+<body style="">
+	<div class="holder">
+		<div class="navigation-holder">
+			<a href="index.html" ><img src="img/logoMJL.png" /></a>
+			<nav>
+			<ul>
+				<a href="contact.html"><li>CONTACT</li></a>
+				<a href="about.html"><li>ABOUT</li></a>
+				<a href="blog.html"><li>BLOG</li></a>
+				<a href="work.html"><li>INFO</li></a>
+				<a href="index.html"><li>HOME</li></a>
+			<ul>
+			</nav>
+		</div><!--End of navigation-holder -->
+	</div><!-- end of holder -->
+	
+	<div class="container">
+		<section class="global-header">
+			<h2 style="font-size:42px;font-weight:bold;">CONTACT</h2>
+				<p style="font-size:15px;font-weight:300;">
+					Home / Contact
+				</p>	
+		</section>
+		
+		<section style="padding:30px 10px;background:#fff;overflow:hidden;">
+		<div class="contact-form" style="width:50%;float:left;">
+				<h2 style="font-size:24px;font-weight:600;color:#000;">CONTACT ME</h2>
+				<p style="font-size:14px;font-weight:300;">&nbsp;E-mail me if you want to get in touch, not for real though,<br />&nbsp;just try calling!</p>
+					
+ 		<form name="myForm" action="mailto:lamamanjil@gmail.com" onsubmit="return validateForm()" method="post">
+			<table border="0">
+ 				<tr>
+ 					<td> <input type="text" name="name" placeholder="Name" required style="width:400px;padding:10px;"></td>
+				</tr>
+				<tr>
+ 					<td width="100px" height="10px;"> </td>
+				</tr>
+				<tr>   	
+   					<td><input type="email" name="email" placeholder="Email" required style="width:400px;padding:10px;"></td>
+   				</tr>
+   				<tr>
+ 					<td width="100px" height="10px;"> </td>
+				</tr>
+   				<tr>
+   					<td><input type="text" name="subject" placeholder="Subject" required style="width:400px;padding:10px;"></td>
+   				</tr>
+   				<tr>
+ 					<td width="100px" height="10px;"> </td>
+				</tr>
+   				<tr>
+   					<td><textarea type="text" name="message" rows="10" cols="30" style="width:400px;padding:10px;disply:block;" placeholder="Message" ></textarea></td>
+   				</tr>
+  				<tr>
+ 					<td width="100px" height="10px;"> </td>
+				</tr>
+   				<tr>
+   					<td><div id="demo"style="margin-bottom:5px;"></div><input type="submit" value="Send Message" style="padding:10px;height:40px;background:#38bef1;color:#fff;border:0 none;cursor:pointer;"></td>
+   				</tr>
+   			</table>
+  		</form>
+		</div><!-- end of contact form-->
+		<div class="map-holder" style="width:50%;float:left;">
+			<h2 style="font-size:24px;font-weight:600;color:#000;">FIND ME</h2>
+			<p style="font-size:14px;font-weight:300;">This is actually a location of the cafe where I like to hangout, you have better chance of finding me here than home.</p>
+			<div id="map" style="width:100%;height:320px;"></div><!-- for google map -->
+		</div><!-- End of map-holder -->
+		</section>
+	</div><!-- End of container -->
+	<footer>
+			<section class="footer-top">
+				<h2 style="font-size:30px;font-weight:300;overflow:hidden;margin-top:60px;margin-bottom:0;">SO WHAT DID YOU THINK ?</h2>
+				<div class="pre-content">
+					<span style="font-size:15px;font-weight:100;">
+						"First you must learn to pull the oar, only then can you take helm"
+					</span>
+					<a href="about.html" style="text-decoration:none;">
+						<div class="btn-contact">
+							ABOUT ME
+						</div>
+					</a>
+				</div>
+			</section><!-- End of footer-top -->
+			<section class="footer-bottom">
+				<div style="width:960px;margin:0 auto;">
+					Copyright 2016 Design and Developed by <a href="https://www.linkedin.com/profile/view?id=AAMAABoUrDwBHdJ-h3vHSS4K9H5Ax9aAUAvup58&trk=hp-identity-name" target="_blank" style="color:#33bcf0;text-decoration:none;"> MANJIL TAMANG</a>, Islington College.
+					<span style="float:right;color:#33bcf0;"> View <a href="reference.html" style="color:#33bcf0;text-decoration:none"> References</a></span>
+				</div>
+			</section>
+	</footer>
+<script>
+	function btnSend() {
+		var x = document.getElementById("demo");
+		x.style.color = "Green"; 
+		x.innerHTML = "Thank you for you feedback!";
+}
+</script>
+<!-- Google map API -->
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTCu6rbGBDym3EQfFt6_97er7JrtejxOo&signed_in=true&callback=initMap">
+</script>
+</body>
+</html>
